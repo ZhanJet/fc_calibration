@@ -1,0 +1,9 @@
+<launch>
+	<include file="$(find ur5_description)/launch/display_without_gui.launch" />
+	<node
+		name= "fc_calibration" pkg= "fc_calibration" type= "fc_identification"
+		output="screen" launch-prefix="gdb -ex run --args " >
+		<!-- load parameters -->
+		<rosparam command="load" file="$(find fc_calibration)/config/config_def.yaml" />
+	</node>
+</launch>

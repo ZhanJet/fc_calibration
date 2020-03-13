@@ -1,0 +1,24 @@
+# Common configuration for force control, specially for sensor&load identification
+# param
+# loop rate
+rate: 80.0  # UR is generally 80Hz
+
+# joint motion limits
+jntmove_limits:
+  vmax: [1.57, 1.57, 1.57, 1.57, 1.57, 1.57]
+  amax: [15.7, 15.7, 15.7, 15.7, 15.7, 15.7]
+
+# sensor installing configration
+sensor_config: 
+  # identification result of bias is also saved and loaded through another yaml file
+  bias:
+    force: [0.0, 0.0, 0.0]
+    torque: [0.0, 0.0, 0.0]
+  pos: [0.0, 0.0, 0.0]  # in unit of m
+  rpy: [0.0, 0.0, 0.0]   # in unit of rad
+
+# load property
+# identification result of load is also saved and loaded through another yaml file
+load_data:
+  mass: 0.0
+  cog_inflan: [0.0, 0.0, 0.0]
