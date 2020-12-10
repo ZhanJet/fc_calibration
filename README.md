@@ -9,7 +9,6 @@ Then you need to cancel the node launch of "joint_state_publisher" in display.la
 
 
 ## Example usage
-
 cd ~/catkin_ws  
 catkin build fc_calibration ur5_description   
 roslaunch fc_calibration fc_calibration.launch   
