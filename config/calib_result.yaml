@@ -1,8 +1,8 @@
 # Force Control Calibration Results
 sensor_config:
 	bias:
-		force: [1, 2, 3]
-		torque: [1.1, 2.2, 3.3]
+		force: [0, 0, 0]
+		torque: [0, 0, 0]
 
 load_data:
 	mass: 1e-06
